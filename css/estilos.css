@@ -1,0 +1,231 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+.fondo-principal{
+    background-color: #fff;
+    background-image: url(../images/fondo_color.svg);
+}
+b, strong{
+    font-stretch: bolder !important;
+}
+.container{
+    width: 960px;
+    height: 610px;
+}
+.break{
+    clear: both;
+}
+.btn{
+       display: inline-block !important; 
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;    
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #272727;
+    
+}
+
+@keyframes pound {
+    to { transform: scale(1.1); }
+}
+
+.scale-btn{
+    animation: pound .5s infinite alternate;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contBtn{
+    background: #00899b;
+    width: 100px;
+    height: 100px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.abajo{
+  bottom: 0;
+}
+
+.icon{
+  background: grey;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px 0 0;
+}
+.alto{
+  min-height: 600px;
+}
+.texto-blanco{
+  color: #fff;
+}
+/*fondo en grilla */
+.row-content{
+  display: contents;
+}
+
+/*.bg-height{
+  background-repeat: no-repeat;
+  height: 610px;   
+}*/
+
+.bt-hover:hover {
+  background-color: #00000042;
+  border: solid 1px #CCC;
+  -moz-box-shadow: 1px 1px 5px #999;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+}
+.container-fluid{
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+}
+/*paginacion interna  slider*/
+
+.customBtns{
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+    margin: 235px 0 0 0;
+}
+.arrowPrev, .arrowNext{
+  cursor: pointer;
+  position: absolute;
+}
+.arrowNext{
+  right: 0;  
+  padding-right: .5em;
+}
+.arrowPrev{
+  padding-left: .5em;
+}
+.arrowNext:hover:after{
+   color: white;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.arrowPrev:hover:after{
+    color: white;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.arrowPrev:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f359";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: brown;
+}
+  
+.arrowNext:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f35a";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: brown;
+}
+
+
+.arrowPrev.jp-disabled, .arrowNext.jp-disabled{
+    display: none;
+}
+.holder {
+  display: none; 
+}
+
+.p-contenido{
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+.back{    
+    z-index: -1;
+    position: absolute;
+}
+.back2{
+  top: 0 !important;
+  right: 0 !important;
+  z-index: -1;
+  position: absolute;
+}
+
+
+.despedida{
+    display: none;
+}
+.despedida{
+    background: #3d4151;
+    border:solid 3px #ccc;
+    border-radius: 14px;
+    color: #ffffff;
+    padding: 0;
+    position: absolute;
+    top: 420px;
+    display: none;
+}
+
+.titulo-cierre{
+    background-color: #676b77;
+    color: #000;
+    width: 100%;
+    height: 39px;
+    border-radius: 10px 10px 0px 0px;
+}
+.titulo-cierre h2 {
+    float: left;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 22px;
+    color: #FFF;
+    font-stretch: 900;
+}
+ .despedida p{
+    float: left;
+    padding: 3%;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.cerrar{
+    padding: 5px; 
+    float: right;
+    border-radius: 50%;
+    background-color: #272727;
+    color: #fff;
+    margin-top: -15px;
+    margin-right: -15px;
+  
+}
+.transition-ease{
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}

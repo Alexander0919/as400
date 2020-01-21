@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Páginas</title>
+	<link rel="stylesheet" href="../../css/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="../../css/animate.css">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="../../js/jquery-2.1.0.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  
+	<script>
+		$(function() {
+			$("div.holder").jPages({
+				containerID : "itemContainer",
+				perPage     : 1,
+				first       : false,
+				previous    : "span.arrowPrev",
+				next        : "span.arrowNext",
+        continuar   : "div.continuar",
+				last        : false
+			});
+		});
+	</script>
+</head>
+<body>
+   <!-- navigation holder -->
+    <div class="holder"></div>
+    <!-- vovler -->
+    <div class="customBtns">
+      <span class="arrowPrev"></span>
+      <span class="arrowNext"></span>
+      <div id="btn_continuar" class="continuar">Continuar</div>
+      <button onclick="prueba()"></button>
+    </div>          
+     <ul id="itemContainer">  
+    </ul>
+
+    <!-- mouseOverRender -->
+    <script type="text/javascript" src="../../js/_dependent/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/tweens.js"></script>
+    <!-- pagination-->
+    <script src="../../js/jPages.js"></script>  
+    <script src="../../js/assets/stats.min.js"></script>
+        <script src="../../js/wow.js"></script>
+    <script>      
+      $(document).ready(function(e) {   
+           wow = new WOW(
+            {
+              animateClass: 'animated',
+              offset:       100,
+              callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+              }
+            }
+          );
+          wow.init();
+          document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+          };
+      });
+    </script>
+
+</body>
+
+</html>
